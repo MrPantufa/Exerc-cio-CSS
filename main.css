@@ -5,7 +5,7 @@
 }
 body > header{
     background-color: #2f3640;
-    padding: 16px 0; /* Removido o caractere ":" extra */
+    padding: 16px 0;
 }
 
 header .container {
@@ -29,14 +29,14 @@ header li a {
 }
 
 .container {
-    max-width: 1366px; /* Define a largura máxima */
-    width: 100%; /* O container ocupará 100% da largura da tela */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 1366px; 
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 .articles {
     display: flex;
-    gap: 16px; /* Adicionei espaçamento entre os artigos */
+    gap: 16px; 
 }
 
 .articles article img {
@@ -44,7 +44,7 @@ header li a {
     width: 100%
 }
 .articles article {
-    width: 30%; /* Corrigido seletor */
+    width: 30%; 
 }
 
 section{
@@ -79,14 +79,14 @@ section h2,
 }
 
 .articles article h3 {
-    font-size: 24px; /* Corrigido o seletor */
+    font-size: 24px; 
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
 
 section h2 {
-    font-size: 32px; /* Adicionando o ':' para definir corretamente o tamanho da fonte */
+    font-size: 32px; 
 }
 
 #sports{
