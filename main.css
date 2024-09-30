@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;    
+}
+body > header{
+    background-color: #2f3640;
+    padding: 16px 0; /* Removido o caractere ":" extra */
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header li {
+display: inline;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin-left: 16px;
+
+}
+
+header li a {
+    color:white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1366px; /* Define a largura máxima */
+    width: 100%; /* O container ocupará 100% da largura da tela */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.articles {
+    display: flex;
+    gap: 16px; /* Adicionei espaçamento entre os artigos */
+}
+
+.articles article img {
+    /*height: 180px; */
+    width: 100%
+}
+.articles article {
+    width: 30%; /* Corrigido seletor */
+}
+
+section{
+    padding:16px 0;
+}
+section h2,
+.articles.article {
+    margin-bottom: 16px;
+}
+
+.articles.article h3{
+    margin-top: 8px ;
+    margin-bottom: 8px;
+}
+
+.articles.article a {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display:inline-block;
+    text-decoration:none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles.article a:hover{
+    text-decoration: none;
+}
+.articles.article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px; /* Corrigido o seletor */
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+section h2 {
+    font-size: 32px; /* Adicionando o ':' para definir corretamente o tamanho da fonte */
+}
+
+#sports{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a{
+    background-color: green;
+}
+
+#economy{
+    background-color: yellow;
+}
+#economy .articles article a {
+    background-color: orange;
+}
+
+#Tecnologia{
+    background-color: aquamarine;
+}
+
+#Curiosidades{
+    background-color: cadetblue;
+}
+
+#Tecnologia .articles article a{
+    background-color: green;
+}
+
+#Curiosidades .articles article a{
+    background-color: yellowgreen;
+}
