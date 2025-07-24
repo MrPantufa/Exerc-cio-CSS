@@ -1,0 +1,62 @@
+@use './variables' as *;
+section {
+  padding: 3.5rem 0;
+
+  .container {
+    h2 {
+      margin-bottom: $spacing;
+    }
+
+    .products {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 32.66%);
+      column-gap: 1%;
+      row-gap: 4%;
+      width: 100%;
+
+      @media (max-width: $breakpoint-lg) {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+      }
+
+      @media (max-width: $breakpoint-sm) {
+        display: block;
+
+        .product-item {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .product-item {
+        img {
+          width: 100%;
+          border-radius: $border-radius-large;
+        }
+
+        h4 {
+          margin: $small-spacing 0;
+        }
+
+        p {
+          margin-bottom: $small-spacing;
+        }
+
+        .product-button {
+          display: block;
+          background-color: $color-button;
+          color: $color-white;
+          text-align: center;
+          padding: $small-spacing 0;
+          border-radius: $border-radius-small;
+          margin-top: $small-spacing;
+          text-decoration: none;
+
+          &:hover {
+            background-color: $color-button-hover;
+          }
+        }
+      }
+    }
+  }
+}
